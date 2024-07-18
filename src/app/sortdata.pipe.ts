@@ -8,7 +8,7 @@ export class SortdataPipe implements PipeTransform {
     return users.sort((a, b) => {
       let x = a.name.toLowerCase();
       let y = b.name.toLowerCase();
-      if (x > y) {
+      if (y > x) {
         return -1;
       } else {
         return 1;
